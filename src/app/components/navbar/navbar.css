@@ -58,10 +58,16 @@
 }
 .location {
   font-weight: 100;
-  color: grey;
+  color: rgb(77, 80, 84);
   padding: 0px 4px;
   overflow: hidden;
   text-overflow: ellipsis; /* 🔥 shows ... if too long */
+}
+.location:hover {
+  color: grey;
+}
+.loc-selector:hover {
+  color: rgb(255, 80, 5);
 }
 
 /* box-shadow: offset-x offset-y blur-radius spread-radius color; */

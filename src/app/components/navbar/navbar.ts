@@ -8,7 +8,7 @@ import { SideDrawer } from '../side-drawer/side-drawer';
   styleUrl: './navbar.css',
 })
 export class Navbar {
-  location = '';
+  location = 'Thanjavur';
   isDrawerOpen = false;
   drawerType: 'signin' | 'location' | null = null;
   drawerDirection: 'left' | 'right' = 'right';
