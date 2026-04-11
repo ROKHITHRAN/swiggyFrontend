@@ -1,0 +1,75 @@
+.outer-container {
+  height: 80px;
+  padding: 0px 20px;
+  display: flex;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.swiggy-icon {
+  height: 50px;
+  width: 50px;
+}
+.img-container {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+  align-items: center;
+}
+.loc-selector {
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+.nav-list-container {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-icon {
+  height: 20px;
+  width: 20px;
+}
+.search-icon {
+  height: 17px;
+  width: 17px;
+}
+.help-icon {
+  height: 21px;
+  width: 21px;
+}
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer; /* make it clickable */
+}
+.drop-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: none; /* remove background */
+  border: none; /* remove border */
+  padding: 0; /* remove spacing */
+  cursor: pointer; /* make it clickable */
+}
+.location {
+  font-weight: 100;
+  color: grey;
+  padding: 0px 4px;
+  overflow: hidden;
+  text-overflow: ellipsis; /* 🔥 shows ... if too long */
+}
+
+/* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+/* ✅ Light shadow (subtle UI)
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+✅ Medium shadow (cards)
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+✅ Strong shadow (floating effect)
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+✅ Glow effect
+box-shadow: 0 0 10px rgba(0, 150, 255, 0.7); */

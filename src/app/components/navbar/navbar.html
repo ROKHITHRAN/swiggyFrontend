@@ -1,0 +1,38 @@
+<div class="outer-container">
+  <div class="img-container">
+    <img src="assets/icons/swiggy.jpeg" class="swiggy-icon" />
+    <div class="loc-selector" (click)="OpenDrawer('location')">
+      Location<span class="location">{{ location }}</span
+      ><button class="drop-down"><img src="assets/icons/angle-down.svg" class="nav-icon" /></button>
+    </div>
+  </div>
+  <div class="nav-list-container">
+    <a class="nav-items"
+      ><img src="assets/icons/suitcase.svg" class="nav-icon" /><span> Corporate</span></a
+    >
+    <a class="nav-items"
+      ><img src="assets/icons/search.svg" class="search-icon" /><span>Search</span></a
+    >
+    <a class="nav-items"
+      ><img src="assets/icons/percentage.svg" class="search-icon" /><span>Offers</span></a
+    >
+    <a class="nav-items"
+      ><img src="assets/icons/question.svg" class="help-icon" /><span>Help</span></a
+    >
+    <a class="nav-items" (click)="OpenDrawer('signin')"
+      ><img src="assets/icons/signin.svg" class="search-icon" /><span>Sign In</span></a
+    >
+    <a class="nav-items"
+      ><img src="assets/icons/shopping-cart.svg" class="search-icon" /><span>Cart</span></a
+    >
+  </div>
+  <div></div>
+</div>
+
+<!-- 🔥 Drawer Component -->
+<app-side-drawer
+  [isDrawerOpen]="isDrawerOpen"
+  [type]="drawerType"
+  (close)="CloseDrawer()"
+  [direction]="drawerDirection"
+></app-side-drawer>
