@@ -1,0 +1,57 @@
+.search{
+    height:70px;
+    padding:20px;
+    width:300px;
+    font-family: sans-serif;
+    font-size: 100%;
+     border: 1px solid #ccc;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+.location{
+    font-family: sans-serif;
+    font-size: 100%;
+    width:300px;
+    padding:20px;
+    margin-top: 40px;
+    background: none;
+    border: 1px solid #ccc;
+}
+.outer{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.search:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    border:none;
+    outline: none;
+}
+
+.gps-icon{
+    width:18px;
+    height:18px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:6px;
+}
+.button-text{
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+    align-items: flex-start;
+}
+.button-text p{
+    color: grey;
+    font-size: small;
+    margin: 0;
+}
+.button-text span{
+    margin: 0;
+}
+
+.button-text span:hover {
+  color: rgb(255, 80, 5);
+}

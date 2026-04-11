@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { SearchLocation } from "../search-location/search-location";
 
 @Component({
   selector: 'app-side-drawer',
-  imports: [CommonModule],
+  imports: [CommonModule, SearchLocation],
   templateUrl: './side-drawer.html',
   styleUrl: './side-drawer.css',
 })
