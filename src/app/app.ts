@@ -1,7 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Navbar } from './components/navbar/navbar';
-import { Home } from "./pages/home/home";
+import { Home } from './components/corousel/home';
 
 @Component({
   selector: 'app-root',
