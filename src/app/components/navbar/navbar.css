@@ -5,6 +5,8 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
 }
 .swiggy-icon {
   height: 50px;
@@ -17,9 +19,10 @@
   align-items: center;
 }
 .loc-selector {
-  width: 200px;
+  width: 150px;
   display: flex;
   align-items: center;
+  margin-left: 10px;
 }
 .nav-list-container {
   width: 70%;
@@ -71,6 +74,11 @@
 .loc-selector:hover {
   color: rgb(255, 80, 5);
 }
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
 
 /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
 /* ✅ Light shadow (subtle UI)
@@ -81,3 +89,41 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 ✅ Glow effect
 box-shadow: 0 0 10px rgba(0, 150, 255, 0.7); */
+
+@media (max-width: 800px) {
+  .nav-list-container {
+    display: none; /* hide normal nav */
+  }
+
+  .menu-icon {
+    display: block; /* show hamburger */
+  }
+
+  .nav-list-container.mobile-open {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 80px;
+    right: 0;
+
+    background: white;
+    width: 200px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+  }
+
+  .nav-list-container.mobile-open .nav-items {
+    padding: 12px 10px;
+    border-bottom: 2px solid #eee; /* 🔥 separator */
+    width: 100%;
+  }
+  .nav-list-container.mobile-open .nav-items:last-child {
+    border-bottom: none;
+  }
+  .nav-list-container.mobile-open .nav-items:hover {
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 150, 255, 0.7);
+    cursor: pointer;
+  }
+}

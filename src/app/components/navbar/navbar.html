@@ -6,7 +6,7 @@
       ><button class="drop-down"><img src="assets/icons/angle-down.svg" class="nav-icon" /></button>
     </div>
   </div>
-  <div class="nav-list-container">
+  <div class="nav-list-container" [class.mobile-open]="isMenuOpen">
     <a class="nav-items"
       ><img src="assets/icons/suitcase.svg" class="nav-icon" /><span> Corporate</span></a
     >
@@ -26,7 +26,7 @@
       ><img src="assets/icons/shopping-cart.svg" class="search-icon" /><span>Cart</span></a
     >
   </div>
-  <div></div>
+  <div class="menu-icon" (click)="toggleMenu()">☰</div>
 </div>
 
 <!-- 🔥 Drawer Component -->

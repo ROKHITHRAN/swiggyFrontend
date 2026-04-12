@@ -1,0 +1,26 @@
+.home-container {
+  margin: 10px 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.home-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  gap: 20px;
+  justify-content: start;
+}
+
+.home-items {
+  background: orange;
+  padding: 20px;
+}
+@media (max-width: 800px) {
+  .home-container {
+    margin: 10px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

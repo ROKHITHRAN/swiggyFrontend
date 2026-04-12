@@ -12,7 +12,11 @@ export class Navbar {
   isDrawerOpen = false;
   drawerType: 'signin' | 'location' | null = null;
   drawerDirection: 'left' | 'right' = 'right';
+  isMenuOpen = false;
 
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
   OpenDrawer(type: 'signin' | 'location') {
     this.isDrawerOpen = true;
     this.drawerType = type;
