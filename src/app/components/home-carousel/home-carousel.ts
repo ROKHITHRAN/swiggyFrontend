@@ -17,5 +17,8 @@ export class HomeCarousel {
     'assets/images/NorthIndian.avif',
     'assets/images/Tea.avif',
     'assets/images/Chinease.avif',
+    'assets/images/Chinease.avif',
+    'assets/images/Chinease.avif',
+    'assets/images/Chinease.avif',
   ];
 }

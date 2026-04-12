@@ -1,11 +1,17 @@
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: start;
+  /* margin: 10px 170px; */
+}
 .carousel-body {
   display: flex;
   overflow-x: auto;
   gap: 16px;
   scroll-behavior: smooth;
   padding: 30px;
-  margin: 0px auto;
-  width: 800px;
+  width: 100%;
 }
 
 .carousel-body::-webkit-scrollbar {
@@ -23,7 +29,7 @@
 
 .search-box {
   position: relative;
-  width: 850px;
+  width: 100%;
   height: 70px;
   margin-top: 70px;
   margin-bottom: 40px;
@@ -46,12 +52,6 @@
   height: 18px;
 }
 
-.home-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .card img {
   width: 100%;
   height: 100%;
@@ -69,4 +69,12 @@
     sans-serif;
   font-size: 1.43rem;
   font-weight: 800;
+  width: 100%; /* ✅ match carousel width */
+}
+.carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
 }
