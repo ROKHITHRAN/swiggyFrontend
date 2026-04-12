@@ -8,14 +8,14 @@
     [class.right]="direction === 'right'"
     (click)="$event.stopPropagation()"
   >
-    <button class="close-btn" (click)="close.emit()">✖</button>
+    <button class="close-btn" (click)="close.emit()">&times;</button>
 
     <ng-container *ngIf="type === 'signin'">
-      <h2>Sign In</h2>
+      <app-sign-in></app-sign-in>
     </ng-container>
 
     <ng-container *ngIf="type === 'location'">
-     <app-search-location></app-search-location>
+      <app-search-location></app-search-location>
     </ng-container>
   </div>
 </div>

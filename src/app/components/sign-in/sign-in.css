@@ -1,0 +1,68 @@
+.sign-img img {
+  height: 100px;
+  width: 100px;
+}
+.sign-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.signIn-container {
+  padding: 0 5px;
+}
+.log-or-sign span {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 800;
+  font-size: x-large;
+}
+.sign-btn-con {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 100;
+  font-size: small;
+  color: grey;
+}
+.sign-btn span {
+  font-size: small;
+}
+.sign-btn-con button {
+  font-family: 'Gilroy', sans-serif;
+  background: none;
+  font-weight: 200;
+  border: none;
+  color: rgb(255, 80, 5);
+}
+.line-break {
+  width: 25px;
+  border: none; /* reset bootstrap */
+  border-top: 2px solid black; /* correct */
+  padding: 15px;
+}
+.sign-form {
+  display: flex;
+  flex-direction: column;
+}
+.sign-form .btn.btn-primary {
+  background-color: rgb(255, 80, 5);
+  color: white;
+  border-radius: 0;
+  border: 1px transparent;
+  flex: 1;
+
+  height: 50px;
+  padding: 0; /* 🔥 important */
+  line-height: 50px; /* center text vertically */
+}
+.form-control {
+  border-radius: 0px;
+}
+.sign-form span {
+  font-size: smaller;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 300;
+  color: grey;
+  font-size: 12px;
+}
+.sign-form span strong {
+  font-weight: 800; /* or 700 */
+  color: black;
+}

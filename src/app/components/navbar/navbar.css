@@ -45,6 +45,8 @@
   align-items: center;
   gap: 10px;
   cursor: pointer; /* make it clickable */
+  text-decoration: none;
+  color: black;
 }
 .drop-down {
   display: flex;
