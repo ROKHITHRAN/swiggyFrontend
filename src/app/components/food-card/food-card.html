@@ -1,0 +1,15 @@
+<div class="food-card">
+  <div class="img-container">
+    <img src="{{ cardDetails.imageUrl }}" />
+  </div>
+  <div class="food-description">
+    <h5>{{ cardDetails.restaurantName }}</h5>
+    <div class="ratings">
+      <img [src]="getRatingIcon(cardDetails.ratings)" width="15" height="15" />{{
+        cardDetails.ratings
+      }}
+    </div>
+    <span>{{ cardDetails.tags }}</span>
+    <span>{{ cardDetails.address }}</span>
+  </div>
+</div>
