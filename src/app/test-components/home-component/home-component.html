@@ -1,0 +1,11 @@
+<div class="home-container">
+    <div class="search-box">
+        <img src="assets/icons/search.svg" class="search-icon">
+        <input type="text" class="search" placeholder="Search for area, street name..">
+    </div>
+    <div class="carousel">
+        <div class="card" *ngFor="let item of items">
+            <img src={{item}}>
+        </div>
+    </div>
+</div>

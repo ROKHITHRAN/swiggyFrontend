@@ -1,0 +1,42 @@
+.signin-header{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 10px;
+}
+.login-img{
+    width:100px;
+    height:100px;
+}
+.create{
+    color:orangered;
+    cursor:pointer
+}
+.signin-text{
+    display: flex;
+    flex-direction: column;
+    font-weight:bold;
+    gap:5px;
+    margin-top: 10px;
+}
+img{
+    margin:0;
+    padding:0;
+}
+.login-txt{
+ font-size:x-large
+}
+
+input{
+    width:100%;
+    height:50px;
+    margin-top:40px
+}
+
+.btn.btn-primary {
+    background-color: orangered;;   /* your color */
+    border-color: orangered;;
+    color: white;
+    border-radius: 0%;
+    width: 100%;
+    margin-top: 20px;
+}

@@ -1,0 +1,14 @@
+<div class="show-more-container">
+    <div class="show-more-heading">
+        Cities with Grocery Delivery
+    </div>
+    <div class="show-more-body">
+        <span *ngFor="let city of cities; let i = index"
+            [class.hidden]="!isExpanded && i >= 6">
+        {{ city }}
+        </span>
+         <button (click)="toggleShowMore()">
+         {{ isExpanded ? 'Show Less' : 'Show More' }}
+  </button>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+.show-more-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:16px;
+    margin-bottom: 20px;
+}
+.show-more-body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+.show-more-body span {
+    flex: 0 0 calc(20% - 10px);
+    border: 1px solid gray;
+    padding: 5px;
+    background: none;
+}
+.show-more-heading{
+    font-family:
+    Gilroy,
+    arial,
+    Helvetica Neue,
+    sans-serif;
+  font-size: 1.43rem;
+  font-weight: 800;
+}
+*{
+    box-sizing: border-box;
+}
+.hidden {
+    display: none;  
+}
+button{
+    padding: 10px;
+    background: local;
+}

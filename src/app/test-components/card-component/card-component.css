@@ -1,0 +1,39 @@
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:16px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap:16px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width:270px;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.image-section{
+    height:50%;
+    width:100%
+}
+
+.image-section img{
+    height:100%;
+    width:100%;
+}
+*{
+    box-sizing: border-box;
+}
+
+p{
+    padding: 0px;
+    margin: 0;
+}

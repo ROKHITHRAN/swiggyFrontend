@@ -1,0 +1,23 @@
+<div class="signin-container">
+    <div class="signin-header">
+        <div class="signin-text">
+            <div class="login-txt"> {{ currentView === 'login' ? 'Login' : 'Sign Up' }}</div>
+            <div> or </div>
+            <span (click)="switchView()" class="create"> {{ currentView === 'login' ? 'Create an account' : 'Login to your account' }}</span>
+        </div>
+        <div>
+            <img class="login-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/Image-login_btpq7r">
+        </div>
+    </div>
+    <hr>
+    <div *ngIf="currentView === 'login'">
+        <input type="text">
+        <button class="btn btn-primary">Sign In</button>
+    </div>
+    <div *ngIf="currentView === 'register'">
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Phone number">
+        <button class="btn btn-primary">Sign Up</button>
+    </div>
+</div>
+

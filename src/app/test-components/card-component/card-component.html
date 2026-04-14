@@ -1,0 +1,22 @@
+<div class="card-container">
+    <div class="card-heading">
+        Top restaurants
+    </div>
+    <div class="cards">
+          <div class="card" *ngFor="let restaurant of restaurants">
+            <!-- Image Section -->
+            <div class="image-section">
+                <img [src]="restaurant.imageUrl" [alt]="restaurant.name">
+            </div>
+            <!-- Description Section -->
+            <div class="desc-section">
+                <h5>{{ restaurant.name }}</h5>
+                <p>{{ restaurant.ratings }}</p>
+                <p>{{ restaurant.Address }}</p>
+                <p>{{ restaurant.tags }}</p> 
+            </div>
+    </div>
+    <!-- <div style="height: 1000px;">
+
+    </div> -->
+</div>
