@@ -1,12 +1,14 @@
-<div class="carousel-wrapper">
-  <!-- LEFT ARROW -->
-  <button class="arrow left" (click)="scrollLeft()">❮</button>
+<div class="carousel-section">
+  <!-- HEADER -->
+  <div class="carousel-header">
+    <div class="controls">
+      <button (click)="scrollLeft()">&lsaquo;</button>
+      <button (click)="scrollRight()">&rsaquo;</button>
+    </div>
+  </div>
 
-  <!-- SCROLL CONTAINER -->
+  <!-- CAROUSEL -->
   <div class="carousel-container" #container>
     <ng-content></ng-content>
   </div>
-
-  <!-- RIGHT ARROW -->
-  <button class="arrow right" (click)="scrollRight()">❯</button>
 </div>

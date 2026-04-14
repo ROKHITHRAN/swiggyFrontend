@@ -1,9 +1,18 @@
 <main class="home-container">
-  <app-home-carousel></app-home-carousel>
+  <!-- <app-home-carousel></app-home-carousel> -->
+  <div class="suggest-con">
+    <h4>What's on your mind?</h4>
+    <app-arrow-carousel>
+      <div class="card" *ngFor="let item of items">
+        <img src="{{ item }}" alt="Food Item" />
+      </div>
+    </app-arrow-carousel>
+  </div>
+  <hr />
   <div class="top-restaurants">
     <h4>Top Restaurant chains in</h4>
     <app-arrow-carousel>
-      <app-food-card></app-food-card>
+      <app-food-card (click)="navigateToRestaurant()"></app-food-card>
       <app-food-card></app-food-card>
       <app-food-card></app-food-card>
       <app-food-card></app-food-card>
@@ -16,7 +25,7 @@
     </app-arrow-carousel>
   </div>
   <hr />
-  <div>Welcome User</div>
+  <h4>Welcome User</h4>
   <div class="home-content">
     <app-food-card></app-food-card>
     <app-food-card></app-food-card>

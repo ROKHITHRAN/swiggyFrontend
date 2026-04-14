@@ -1,39 +1,71 @@
-.carousel-wrapper {
-  position: relative;
+.carousel-section {
   width: 100%;
-}
-
-.carousel-container {
   display: flex;
-  gap: 16px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  scrollbar-width: none; /* firefox */
+  flex-direction: column;
+  gap: 20px;
 }
 
-.carousel-container::-webkit-scrollbar {
-  display: none; /* chrome */
+/* header */
+.carousel-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.carousel-header h2 {
+  font-weight: 800;
 }
 
 /* arrows */
-.arrow {
-  position: absolute;
-  top: 40%;
-  transform: translateY(-50%);
-  background: white;
+.controls {
+  display: flex;
+  gap: 10px;
+  font-size: x-large;
+}
+
+.controls button {
   border: none;
-  font-size: 24px;
-  cursor: pointer;
-  z-index: 10;
-  padding: 8px 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background: #eaeaea;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.arrow.left {
-  left: -10px;
+/* container */
+.carousel-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
 }
 
-.arrow.right {
-  right: -10px;
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* 🔥 IMPORTANT */
+.carousel-container > * {
+  flex: 0 0 auto;
+}
+
+/* snap effect */
+.carousel-container {
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-container > * {
+  scroll-snap-align: start;
+}
+@media (max-width: 500px) {
+  .carousel-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

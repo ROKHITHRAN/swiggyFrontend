@@ -11,6 +11,7 @@ export type register = {
 };
 
 export type restaurantCardDetails = {
+  restaurantId: number;
   restaurantName: string;
   ratings: number;
   imageUrl: string;
