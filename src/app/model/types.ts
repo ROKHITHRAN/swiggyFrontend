@@ -9,3 +9,11 @@ export type register = {
   phoneNumber: string;
   name: string;
 };
+
+export type Restaurant={
+  name:String;
+  ratings:Number;
+  Address:String;
+  imageUrl:String;
+  tags:String;
+};

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-// import { Restaurant } from '../../model/types';
+import { Restaurant } from '../../model/types';
 import { CommonModule, NgFor } from '@angular/common';
 
 @Component({
