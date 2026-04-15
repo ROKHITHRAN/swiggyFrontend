@@ -1,0 +1,40 @@
+.offer-container{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.offers{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-family: Gilroy;
+    font-size:18px;
+    font-weight: 800;
+    /* flex-wrap: wrap; */
+}
+.offer-desc{
+    display: flex;
+    flex-direction: column;
+}
+.offer-heading{
+    font-family: Gilroy;
+    font-size:18px;
+    font-weight: 800;
+}
+.offer{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgba(2, 6, 12, 0.15);
+    padding: 12px;
+    height:80px;
+    width: 300px;
+    border-radius: 20px;
+}
+.second-line{
+        color: rgba(2, 6, 12, 0.45);
+}
+h2{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+

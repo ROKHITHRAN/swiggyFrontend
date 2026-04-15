@@ -11,6 +11,8 @@ export class ArrowCarousel {
 
   @ViewChild('container', { static: true }) container!: ElementRef;
 
+  @Input() heading:string="Dealssss";
+
   scrollLeft() {
     this.container.nativeElement.scrollBy({
       left: -200,

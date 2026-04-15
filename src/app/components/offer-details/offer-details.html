@@ -1,0 +1,11 @@
+<div class="offer-container">
+  <div class="offers">
+    <div class="offer" *ngFor="let offer of offerDetails">
+        <img [src]="offer.imageUrl">
+        <div class="offer-desc">
+            <div class="first-line">{{offer.description}}</div>
+            <div class="second-line">{{offer.Code}}</div>
+        </div>
+    </div>
+  </div>
+</div>

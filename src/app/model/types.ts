@@ -18,3 +18,9 @@ export type restaurantCardDetails = {
   address: string;
   tags: string;
 };
+
+export type OfferCardDetails={
+  imageUrl:String;
+  Code:String;
+  description:String;
+};

@@ -1,8 +1,7 @@
 <main class="home-container">
   <!-- <app-home-carousel></app-home-carousel> -->
   <div class="suggest-con">
-    <h4>What's on your mind?</h4>
-    <app-arrow-carousel>
+    <app-arrow-carousel [heading]="'What\'s on your mind?'">
       <div class="card" *ngFor="let item of items">
         <img src="{{ item }}" alt="Food Item" />
       </div>
@@ -10,8 +9,7 @@
   </div>
   <hr />
   <div class="top-restaurants">
-    <h4>Top Restaurant chains in</h4>
-    <app-arrow-carousel>
+    <app-arrow-carousel [heading]="'Top Restaurant chains in'">
       <app-food-card (click)="navigateToRestaurant()"></app-food-card>
       <app-food-card></app-food-card>
       <app-food-card></app-food-card>
